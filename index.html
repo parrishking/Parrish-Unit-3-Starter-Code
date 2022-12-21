@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Parrish Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+  
+  <audio src="Dungeon.mp3" autoplay loop></audio>
+  <div class="title">The Castle</div>
+  <div class="story-opening">
+    <img src="https://a.cdn-hotels.com/gdcs/production12/d1130/83f1c8c6-e12d-4e69-8433-c5bbc90b5ad6.jpg">
+    <img class="key" src="https://www.collinsdictionary.com/images/full/key_69270748_1000.jpg">
+    <p class = Secret>You have been locked up in a castle for treason! What will you do?</p>
+  </div>
+  <!--Change the text of the buttons to the options relevant to your story!-->
+  <div class="buttons">
+    <button class="option-one">Do Nothing</button>
+    <button class="option-two">Look Around</button>
+    <button class="option-three">Use It</button>
+  </div>
+  <!--Between lines 19-22, put the part of the story the user will see if they picked option one-->
+  <div class="option-one-screen">
+     <p>After sitting for several minutes, the king comes with guards to execute you!</p>
+     <img src="https://media.istockphoto.com/id/487620741/photo/police-authority.jpg?s=1024x1024&w=is&k=20&c=fz7U3MsHCSxuNd9l7-1cCG__nKxgDAsgdBrObXKuTrY=">
+     <p>How will you react?</p>
+     <button class = "yes1">Fight Back</button>
+     <button class = "no1">Keep Doing Nothing</button>
+  </div>
+  <!--Between lines 24-27, put the part of the story the user will see if they picked option two-->
+  <div class="option-two-screen">
+    <h1>You encounter a strange small Black cat who offers to help you!</h1>
+    <img src="https://m.media-amazon.com/images/I/41bssY6fEQL.jpg">
+    <p>Will You Trust Him?</p>
+    <button class = "yes2">No</button>
+    <button class = "no2">Yes</button>
+  </div>
+  <!--Between lines 29-32, put the end of the story if the user chose option 1-->
+  <div class="option-one-end">
+    <h1>You encounter a King's Guard!</h1>
+    <img src="https://collinsdictionary.com/images/full/guard_327014105.jpg">
+<p>Use Your Spells.</p>
+    <button class = "Thunder">Fulminating Forcast</button>
+    <button class = "Laser">Orbital Laser</button>
+  </div>
+  <div class = "Spell1">
+    <h1>A lightning bolt comes out of mid-air and makes a Direct hit on the Guard and his surroundings! You run away amidst the Chaos!</h1>
+    <img src = "https://media.tenor.com/r6vrlAXejQsAAAAM/ichiban.gif">
+    <p>You Win!</p>
+    <p>Ending 1 of 7</p>
+    <button class = "Refresh" onClick="window.location.reload();">Would You Like To Restart?</button>
+  </div>
+  <div class="option-two-end">
+    <h1>You encounter Morgana!</h1>
+    <img src="https://static.wikia.nocookie.net/megamitensei/images/6/68/P5_Morgana_character_artwork.png">
+    <p>Attack</p>
+    <button class = "Smash">Rock Swing</button>
+    <button class = "Slam">Reverse German Suplex</button>
+  </div>
+  <div class = "Spell2">
+    <h1>You realize You Have No Orbital Laser, and get Killed for incompetence.</h1>
+    <img src = "https://static.fandomspot.com/images/09/19275/08-dark-souls-game-over-screen.jpg">
+    <p>Game Over</p>
+    <p>Ending 2 of 7</p>
+    <button class = "Refresh" onClick="window.location.reload();">Would You Like To Try Again?</button>
+  </div>
+  <div class = "Spell3">
+    <h1>You overcame Moragan and escaped by yourself!</h1>
+    <img src = "https://static.wikia.nocookie.net/megamitensei/images/5/53/P5_portrait_of_Morgana_shocked.png">
+    <img src = "https://media.tenor.com/r6vrlAXejQsAAAAM/ichiban.gif">
+    <p>You win!</p>
+    <p>Ending 3 of 7</p>
+    <button class = "Refresh" onClick="window.location.reload();">Would You Like To Restart?</button>
+  </div>
+  <div class = "Spell4">
+    <h1>Morgana is too small to Suplex, so he stabs you and leaves you to rot after you miss.</h1>
+    <img src = "https://static.fandomspot.com/images/09/19275/08-dark-souls-game-over-screen.jpg">
+    <p>Game Over</p>
+    <p>Ending 4 of 7</p>
+        <button class = "Refresh" onClick="window.location.reload();">Would You Like To Try Again?</button>
+  </div>
+<div class="no-end">
+  <img src="https://media.tenor.com/r6vrlAXejQsAAAAM/ichiban.gif">
+  <p>Morgana Lead you out of the Castle Safely!</p>
+  <p>Ending 5 of 7</p>
+  <button class = "Refresh" onClick="window.location.reload();">Would You Like To Restart?</button>
+</div>
+
+  <div class="secret-ending">
+    <p>You use the key and escape the cell, and encounter the King!</p>
+    <img src="https://static9.depositphotos.com/1157310/1103/v/600/depositphotos_11037609-stock-illustration-king-cartoon.jpg">
+    <p>Are you ready to challenge the Royal Crown?</p>
+    <button class="FinalYes">Yes</button>
+    <button class="FinalNo">No</button>
+  </div>
+
+  <div class=skillset>
+      <h1>You Encounter the King!</h1>
+      <img src="https://www.cityairnews.com/uploads/images/image-750x-2020-12-03-06:11:30pm-5fc8dcfa4315b.jpg">
+      <p>Attack</p>
+      <button class="thunder2">Fulminating Forcast</button>
+      <button class="slam2">Reverse German Suplex</button>
+  </div>
+
+<div class="The-End">
+  <h1>You overtook the King and took over his Legacy as the King of The Hood!</h1>
+  <img src="https://media.tenor.com/6b-NREMriXEAAAAd/yakuza-kasuga.gif">
+  <p>True Ending</p>
+  <p>Ending 7 of 7</p>
+  <p>Thanks For Playing!</p>
+  <button class = "Refresh" onClick="window.location.reload();">Would You Like To Restart?</button>
+</div>
+
+<div class="end6">
+  <p>You are executed by the guards.</p>
+  <img src ="https://static.fandomspot.com/images/09/19275/08-dark-souls-game-over-screen.jpg">
+  <p>Game Over</p>
+  <p>Ending 6 of 7</p>
+  <button class = "Refresh" onClick="window.location.reload();">Would You Like To Restart?</button>
+</div>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
